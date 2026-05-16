@@ -1,0 +1,33 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# VS Code
+.vscode/
+
+# Build and Dist
+frontend/dist/
+backend/dist/
+build/
+dist/
+*.egg-info/
+
+# Environment Variables
+.env
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Note: data/*.csv and ml_engine/car_price_pipeline.pkl are not ignored 
+# as they might be required to run the project. Add them here if needed.

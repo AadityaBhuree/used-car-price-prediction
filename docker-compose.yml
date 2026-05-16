@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./ml_engine:/ml_engine
+    environment:
+      - MODEL_PATH=/ml_engine/car_price_pipeline.pkl
+      - METADATA_PATH=/ml_engine/metadata.json
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend

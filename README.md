@@ -53,3 +53,4 @@ If you have Docker installed, you can run everything with one command:
 ```bash
 docker-compose up
 ```
+---
